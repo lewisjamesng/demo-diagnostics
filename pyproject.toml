@@ -1,0 +1,10 @@
+[project]
+name = "demo-diagnostics"
+version = "1.0.0"
+description = "Synthetic demo: diagnostic trouble code parser"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -1,0 +1,20 @@
+# Synthetic diagnostic-code rules for the demo. Not real manufacturer codes.
+systems:
+  P: powertrain
+  B: body
+  C: chassis
+  U: network
+rules:
+  - prefix: P0A
+    subsystem: high-voltage battery
+    severity: critical
+  - prefix: P05
+    subsystem: idle control
+    severity: low
+  - prefix: C01
+    subsystem: brake control
+    severity: high
+  - prefix: U01
+    subsystem: module communication
+    severity: medium
+default_severity: medium
